@@ -1,0 +1,77 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #255784;
+}
+
+.glow {
+  font-size: 2rem;
+  color:#fff;
+  font-family: cursive;
+  animation: flicker 1.5s infinite alternate;
+  
+  
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(0, 174, 255),
+      0 0 80px rgb(0, 174, 255),
+      0 0 90px  rgb(0, 174, 255),
+      0 0 100px rgb(0, 174, 255),
+      0 0 150px rgb(0, 174, 255);
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+
+.nav ul {
+  list-style: none;
+  /* display: flex; */
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.nav li {
+  margin-left: 1.5rem;
+  font-size: 1.25rem;
+  list-style: none;
+  display: flex;
+  padding: 8px 8px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #2196f3;
+  text-shadow:
+  0 0 4px #fff,
+  0 0 11px #fff,
+  0 0 19px #fff,
+  0 0 40px rgb(0, 174, 255),
+  0 0 80px rgb(0, 174, 255),
+  0 0 90px  rgb(0, 174, 255),
+  0 0 100px rgb(0, 174, 255),
+  0 0 150px rgb(0, 174, 255);
+  
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: #e6fcfc;
+}
